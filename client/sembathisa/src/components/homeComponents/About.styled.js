@@ -2,19 +2,86 @@ import styled from "styled-components";
 
 export const AboutLayOut = styled.div`
   height: 100vh;
-  width: 100%;
+  width: 80%;
   max-width: 1200px;
 `;
 
 export const Introduction = styled.div`
   height: 200px;
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const IntroductionHeader = styled.div`
-  width: 40%;
+  width: 30%;
+  h3 {
+    margin-top: 24px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 44px;
+  }
 `;
 
 export const IntroductionParagraph = styled.div`
-  width: 50%;
+  width: 45%;
+`;
+
+export const AboutUsContentLayout = styled.div`
+  width: 100%;
+  margin-top: -1px;
+  @media (min-width: 1200px) {
+    margin-top: 28px;
+  }
+`;
+
+export const AboutUsContentHeader = styled.div`
+  h3 {
+    text-align: left;
+    margin-top: 4px;
+  }
+`;
+
+export const AboutUsContent = styled.div`
+  display: flex;
+`;
+
+export const AboutUsMedia = styled.div`
+  width: 30%;
+  img {
+    width: 100%;
+    height: 180px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 4px;
+  }
+`;
+
+export const AboutUsText = styled.div`
+  width: 65%;
+  margin-left: 26px;
+  h3 {
+    text-align: left;
+  }
+
+  .financial {
+    margin-top: -4px;
+  }
+
+  button {
+    margin-top: -4px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 4px;
+  }
+`;
+
+export const AboutUsParagraph = styled.div`
+  width: 70%;
+  p {
+    text-align: left;
+  }
 `;
