@@ -39,6 +39,7 @@ export const HeroParagraph = styled.div`
 
   button {
     margin-top: -4px;
+    margin-left: 16.5%;
   }
 
   @media (min-width: 768px) {
