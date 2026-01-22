@@ -40,6 +40,19 @@ export const MediumText = styled.h3`
   }
 `;
 
+export const SmallMediumText = styled.h3`
+  font-size: ${(props) => props.theme.fontSizes.sm.smallMedium};
+  color: ${(props) => props.theme.colors.textPrimary};
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    font-size: ${(props) => props.theme.fontSizes.md.smallMedium};
+  }
+`;
+
 export const LogoText = styled.h3`
   font-size: ${(props) => props.theme.fontSizes.sm.logo};
   color: ${(props) => props.theme.colors.textPrimary};
