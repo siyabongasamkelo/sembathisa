@@ -37,9 +37,15 @@ export const HeroParagraph = styled.div`
   width: 90%;
   margin-left: 5%;
 
-  button {
-    margin-top: -4px;
-    margin-left: 16.5%;
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin-top: -4px;
+      /* margin-left: 16.5%; */
+    }
   }
 
   @media (min-width: 768px) {

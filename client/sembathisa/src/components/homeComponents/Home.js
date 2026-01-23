@@ -44,7 +44,9 @@ const Home = () => {
                   Africa, the Sembathisa Ubukhosi Foundation is a poineering non
                   - profit organization
                 </SmallText>
-                <Button>Join Us</Button>
+                <div>
+                  <Button>Join Us</Button>
+                </div>
               </HeroParagraph>
             </HeroTextContent>
             <HeroDecorationRight></HeroDecorationRight>
