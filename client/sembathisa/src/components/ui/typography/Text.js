@@ -76,3 +76,17 @@ export const ButtonText = styled.h3`
     font-size: ${(props) => props.theme.fontSizes.md.button};
   }
 `;
+
+export const FormLabel = styled.label`
+  font-size: ${(props) => props.theme.fontSizes.sm.small};
+  color: ${(props) => props.theme.colors.textSecondary};
+  font-family: "Kantumruy Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 22px;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    font-size: ${(props) => props.theme.fontSizes.md.small};
+  }
+`;
