@@ -4,7 +4,6 @@ export const Button = styled.button`
   height: 40px;
   width: 70%;
   width: 220px;
-  /* margin-left: 15%; */
   border: none;
   background-color: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.buttonText};
