@@ -65,23 +65,30 @@ const OurServices = () => {
             <TermsAndConditionContent>
               <FeesAndPayment>
                 <SmallMediumText>Fees & Payments</SmallMediumText>
-                <SmallText>
-                  <ul>
-                    <li>
+
+                <ul>
+                  <li>
+                    <SmallText>
+                      {" "}
                       A once-off registration fee of R50 is required and is
                       non-refundable.
-                    </li>
-                    <li>
+                    </SmallText>
+                  </li>
+                  <li>
+                    <SmallText>
                       An annual affiliation fee of R500 is payable each year to
                       maintain active affiliation status.
-                    </li>
-                    <li>
+                    </SmallText>
+                  </li>
+                  <li>
+                    <SmallText>
+                      {" "}
                       A 10% commission is applicable on any funding received
                       through opportunities facilitated by the Sembathisa
                       Ubukhosi Foundation.
-                    </li>
-                  </ul>
-                </SmallText>
+                    </SmallText>
+                  </li>
+                </ul>
               </FeesAndPayment>
 
               <ReadTermsAndConditions>
