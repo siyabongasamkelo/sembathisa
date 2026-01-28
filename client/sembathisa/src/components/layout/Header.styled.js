@@ -4,18 +4,17 @@ export const Headerr = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: ${(props) => props.theme.spacing.lg};
 `;
 
 export const HeaderInner = styled.div`
   width: 100%;
-  height: 80px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media (min-width: 1200px) {
-    height: 160px;
   }
 `;
 
@@ -41,10 +40,7 @@ export const UserProfile = styled.div`
   aspect-ratio: 1 /1;
   border-radius: 50%;
   background-color: black;
-
-  margin-top: 30px;
   @media (min-width: 1200px) {
-    height: 74px;
   }
 `;
 
@@ -58,7 +54,7 @@ export const HelpButton = styled.button`
   border-radius: 30px;
   border: none;
   margin-left: 0px;
-  margin-top: 8px;
+  margin-top: ${(props) => props.theme.spacing.md};
 
   @media (min-width: 1200px) {
     width: 74px;
