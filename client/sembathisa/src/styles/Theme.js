@@ -33,5 +33,6 @@ export const appTheme = {
     md: "12px",
     lg: "24px",
     xl: "48px",
+    xxl: "78px",
   },
 };
