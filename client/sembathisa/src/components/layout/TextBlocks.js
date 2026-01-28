@@ -3,7 +3,6 @@ import { SmallMediumText, SmallText } from "../ui/typography/Text";
 
 export const HeaderAndText = styled.div`
   width: 30%;
-  margin-top: 19px;
 `;
 
 export const Header = styled.div`
@@ -14,6 +13,8 @@ export const Header = styled.div`
 `;
 
 export const Paragraph = styled.div`
+  margin-top: ${(props) => props.theme.spacing.lg};
+
   p {
     text-align: left;
   }
