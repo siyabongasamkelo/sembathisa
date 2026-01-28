@@ -2,31 +2,27 @@ import styled from "styled-components";
 
 export const HomeLayout = styled.div`
   width: 80%;
-  height: 95vh;
   max-width: 1200px;
 `;
 
 export const Hero = styled.div`
-  min-height: 85%;
   width: 100%;
+
+  margin-top: ${(props) => props.theme.spacing.lg};
 `;
 
 export const HeroContent = styled.div`
-  height: 40%;
   width: 100%;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: 1200px) {
-    min-height: 254px;
   }
 `;
 
 export const HeroTextContent = styled.div`
   width: 45%;
-  height: 200px;
   h3 {
-    margin-top: -7px;
   }
   @media (min-width: 1200px) {
     width: 55%;
@@ -43,8 +39,6 @@ export const HeroParagraph = styled.div`
     justify-content: center;
 
     button {
-      margin-top: -4px;
-      /* margin-left: 16.5%; */
     }
   }
 
@@ -74,12 +68,12 @@ export const HeroMedia = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 4px;
+
+  margin-top: ${(props) => props.theme.spacing.lg};
 
   img {
     width: 220px;
     height: 140px;
-    margin-top: -3px;
   }
   @media (min-width: 1200px) {
     img {
@@ -92,20 +86,17 @@ export const HeroMedia = styled.div`
 export const IconsAndBenefits = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: ${(props) => props.theme.spacing.md};
 `;
 
 export const Icons = styled.div`
   width: 200px;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 14px;
 `;
 
 export const Benefits = styled.div`
-  margin-top: 14px;
   div {
-    height: 20px;
-    margin-top: 10px;
     display: flex;
     p {
       margin-left: 10px;
