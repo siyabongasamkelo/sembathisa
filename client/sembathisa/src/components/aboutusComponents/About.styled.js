@@ -1,28 +1,27 @@
 import styled from "styled-components";
 
 export const AboutLayOut = styled.div`
-  height: 100vh;
   width: 80%;
   max-width: 1200px;
+  margin-top: ${(props) => props.theme.spacing.xxl};
 `;
 
 export const AboutUsContentLayout = styled.div`
   width: 100%;
-  margin-top: -1px;
   @media (min-width: 1200px) {
-    margin-top: 28px;
   }
 `;
 
 export const AboutUsContentHeader = styled.div`
+  margin-top: ${(props) => props.theme.spacing.sm};
   h3 {
     text-align: left;
-    margin-top: 4px;
   }
 `;
 
 export const AboutUsContent = styled.div`
   display: flex;
+  margin-top: ${(props) => props.theme.spacing.lg};
 `;
 
 export const AboutUsMedia = styled.div`
@@ -32,7 +31,6 @@ export const AboutUsMedia = styled.div`
     height: 180px;
   }
   @media (min-width: 1200px) {
-    margin-top: 4px;
   }
 `;
 
@@ -43,16 +41,17 @@ export const AboutUsText = styled.div`
     text-align: left;
   }
 
+  P {
+    margin-top: ${(props) => props.theme.spacing.md};
+  }
+
   .financial {
-    margin-top: -4px;
   }
 
   button {
-    margin-top: -4px;
   }
 
   @media (min-width: 1200px) {
-    margin-top: 4px;
   }
 `;
 
