@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const ContactUsLayout = styled.div`
   width: 80%;
-  height: auto;
   max-width: 1200px;
 
-  margin-top: 60px;
+  margin-top: ${(props) => props.theme.spacing.xxl};
 `;
 
-export const ContactUsContent = styled.div``;
+export const ContactUsContent = styled.div`
+  margin-top: ${(props) => props.theme.spacing.xl};
+`;
 
 export const ContactDetails = styled.div``;
 
@@ -26,20 +27,26 @@ export const ContactForm = styled.form`
   border: 1px solid #8ca9ff;
   width: 60%;
   border-radius: 10px;
+  margin-top: ${(props) => props.theme.spacing.lg};
 
   label {
     margin-left: 10%;
-    margin-top: 20px;
+    margin-top: ${(props) => props.theme.spacing.lg};
   }
 
   input {
-    margin-top: 5px;
+    margin-top: ${(props) => props.theme.spacing.md};
+  }
+
+  textarea {
+    margin-top: ${(props) => props.theme.spacing.md};
   }
 
   button {
-    height: 20px;
-    width: 100px;
+    height: 40px;
+    width: 140px;
     margin-left: 10%;
-    margin-top: 20px;
+    margin-top: ${(props) => props.theme.spacing.md};
+    margin-bottom: ${(props) => props.theme.spacing.xl};
   }
 `;
