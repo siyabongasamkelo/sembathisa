@@ -10,6 +10,7 @@ import {
 } from "./Header.styled";
 import { LogoText } from "../ui/typography/Text";
 import { Link } from "react-router-dom";
+import { List } from "react-bootstrap-icons";
 // import { QuestionCircle } from "react-bootstrap-icons";
 
 const Header = () => {
@@ -29,6 +30,7 @@ const Header = () => {
         </NavArea>
 
         <ActionArea>
+          <List />
           <UserProfile />
           <HelpButton>{/* help <QuestionCircle /> */}</HelpButton>
         </ActionArea>
