@@ -32,9 +32,20 @@ export const NavArea = styled.nav`
   @media only screen and (min-width: 240px) {
     display: none;
   }
+  @media only screen and (min-width: 900px) {
+    display: block;
+  }
 `;
 
 export const ActionArea = styled.div`
+  button {
+    height: 40px;
+    width: 80px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-top: ${(props) => props.theme.spacing.lg};
+  }
+
   @media only screen and (min-width: 240px) {
     svg {
       display: block;
@@ -47,22 +58,17 @@ export const ActionArea = styled.div`
   }
 
   @media only screen and (min-width: 900px) {
-    display: none;
-  }
-
-  button {
-    height: 40px;
-    width: 80px;
-    border-radius: 30px;
-    font-size: 12px;
-    margin-top: ${(props) => props.theme.spacing.lg};
+    display: block;
+    svg {
+      display: none;
+    }
   }
 `;
 
 export const LogoText = styled.h3``;
 
 export const UserProfile = styled.div`
-  height: 44px;
+  height: 64px;
   aspect-ratio: 1 /1;
   border-radius: 50%;
   background-color: black;
@@ -70,49 +76,7 @@ export const UserProfile = styled.div`
     display: none;
   }
 
-  @media (min-width: 1200px) {
-  }
-`;
-
-export const HelpButton = styled.button`
-  height: 30px;
-  width: 44px;
-  background-color: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.buttonText};
-  font-size: 12px;
-  font-weight: 600;
-  border-radius: 30px;
-  border: none;
-  margin-left: 0px;
-  margin-top: ${(props) => props.theme.spacing.md};
-
-  @media only screen and (min-width: 240px) {
-    height: 45px;
-    width: 90px;
-    margin-top: ${(props) => props.theme.spacing.lg};
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p {
-      color: white;
-      display: flex;
-
-      margin-top: 10%;
-      margin-left: 20%;
-    }
-
-    svg {
-      fill: white;
-      transform: scale(130%);
-      margin-left: 10px;
-      margin-top: 5%;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    width: 74px;
-    height: 40px;
+  @media (min-width: 900px) {
+    display: block;
   }
 `;
