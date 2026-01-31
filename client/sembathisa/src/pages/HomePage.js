@@ -6,6 +6,7 @@ import ContactUs from "../components/ContactUs/ContactUs";
 import JoinNow from "../components/joinNow/JoinNow";
 import Faq from "../components/FAQcomponnets/Faq.js";
 import Footer from "../components/layout/Footer";
+import HomeMobile from "../components/homeComponents/HomeMobile";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,9 @@ const HomePage = () => {
       <ContactUs />
       <Faq />
       <Footer />
+
+      {/* Mobile Designs */}
+      <HomeMobile />
     </>
   );
 };
