@@ -9,6 +9,11 @@ export const SmallText = styled.p`
   line-height: 22px;
   text-align: center;
 
+  @media only screen and (min-width: 240px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.smallMedium};
+    text-align: left;
+  }
+
   @media (min-width: 1200px) {
     font-size: ${(props) => props.theme.fontSizes.md.small};
   }
@@ -21,6 +26,10 @@ export const HeroText = styled.h1`
   font-optical-sizing: auto;
   font-style: normal;
   text-align: center;
+
+  @media only screen and (min-width: 240px) {
+    font-size: ${(props) => props.theme.fontSizes.md.large};
+  }
 
   @media (min-width: 1200px) {
     font-size: ${(props) => props.theme.fontSizes.md.large};
@@ -59,6 +68,10 @@ export const LogoText = styled.h3`
   font-family: "Inspiration", cursive;
   font-weight: 400;
   font-style: normal;
+
+  @media only screen and (min-width: 240px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.medium};
+  }
 
   @media (min-width: 1200px) {
     font-size: ${(props) => props.theme.fontSizes.md.logo};
