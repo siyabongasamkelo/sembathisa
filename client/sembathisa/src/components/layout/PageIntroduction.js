@@ -10,14 +10,32 @@ export const Introduction = styled.div`
 
 export const IntroductionHeader = styled.div`
   width: 30%;
-  h3 {
+
+  @media only screen and (min-width: 240px) {
+    width: 90%;
+    display: flex;
+    justify-content: center;
   }
+
   @media (min-width: 1200px) {
+    width: 30%;
+    display: block;
   }
 `;
 
 export const IntroductionParagraph = styled.div`
   width: 45%;
-
   margin-top: ${(props) => props.theme.spacing.sm};
+
+  @media only screen and (min-width: 240px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: ${(props) => props.theme.spacing.md};
+  }
+
+  @media (min-width: 1200px) {
+    width: 45%;
+    margin-top: ${(props) => props.theme.spacing.sm};
+  }
 `;
