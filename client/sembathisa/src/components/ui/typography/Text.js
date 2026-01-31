@@ -14,9 +14,13 @@ export const SmallText = styled.p`
     line-height: 30px;
   }
 
-  @media (min-width: 1200px) {
-    font-size: ${(props) => props.theme.fontSizes.md.small};
+  @media (min-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.small};
     line-height: 22px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.smallMedium};
   }
 `;
 
@@ -33,8 +37,8 @@ export const HeroText = styled.h1`
     font-size: 36px;
   }
 
-  @media (min-width: 1200px) {
-    font-size: ${(props) => props.theme.fontSizes.md.large};
+  @media (min-width: 9000px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.large};
   }
 `;
 
@@ -51,8 +55,8 @@ export const MediumText = styled.h3`
     font-size: 28px;
   }
 
-  @media (min-width: 1200px) {
-    font-size: ${(props) => props.theme.fontSizes.md.medium};
+  @media (min-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.medium};
   }
 `;
 
@@ -68,8 +72,8 @@ export const SmallMediumText = styled.h3`
     font-size: ${(props) => props.theme.fontSizes.sm.medium};
   }
 
-  @media (min-width: 1200px) {
-    font-size: ${(props) => props.theme.fontSizes.md.smallMedium};
+  @media (min-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.SmallMedium};
   }
 `;
 
@@ -84,8 +88,8 @@ export const LogoText = styled.h3`
     font-size: ${(props) => props.theme.fontSizes.sm.medium};
   }
 
-  @media (min-width: 1200px) {
-    font-size: ${(props) => props.theme.fontSizes.md.logo};
+  @media (min-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.logo};
   }
 `;
 
@@ -96,8 +100,8 @@ export const ButtonText = styled.h3`
   font-optical-sizing: auto;
   font-style: normal;
 
-  @media (min-width: 1200px) {
-    font-size: ${(props) => props.theme.fontSizes.md.button};
+  @media (min-width: 900px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.button};
   }
 `;
 
