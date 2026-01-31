@@ -17,7 +17,7 @@ export const IntroductionHeader = styled.div`
     justify-content: center;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
     width: 30%;
     display: block;
   }
@@ -34,7 +34,8 @@ export const IntroductionParagraph = styled.div`
     margin-top: ${(props) => props.theme.spacing.md};
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
+    display: block;
     width: 45%;
     margin-top: ${(props) => props.theme.spacing.sm};
   }
