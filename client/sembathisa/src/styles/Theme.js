@@ -34,5 +34,7 @@ export const appTheme = {
     lg: "24px",
     xl: "48px",
     xxl: "78px",
+    xxxl: "148px",
+    xxxxl: "188px",
   },
 };
