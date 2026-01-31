@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeMobileLayout = styled.div`
-  width: 90%;
+  width: 80%;
 `;
 
 export const HeroTextLayout = styled.div`
@@ -19,20 +19,22 @@ export const HeroTextLayout = styled.div`
 
 export const HeroMedia = styled.div`
   display: flex;
+  justify-content: center;
 `;
 
 export const ColumnPhotos = styled.div`
   display: flex;
   flex-direction: column;
   img {
-    width: 180px;
+    width: 140px;
+    /* margin-left: ${(props) => props.theme.spacing.md}; */
     margin-top: ${(props) => props.theme.spacing.md};
   }
 `;
 
 export const SinglePhoto = styled.div`
   img {
-    width: 180px;
+    width: 140px;
     margin-left: ${(props) => props.theme.spacing.md};
     margin-top: ${(props) => props.theme.spacing.xxl};
   }
