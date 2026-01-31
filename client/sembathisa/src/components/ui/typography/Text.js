@@ -11,11 +11,12 @@ export const SmallText = styled.p`
 
   @media only screen and (min-width: 240px) {
     font-size: ${(props) => props.theme.fontSizes.sm.smallMedium};
-    text-align: left;
+    line-height: 30px;
   }
 
   @media (min-width: 1200px) {
     font-size: ${(props) => props.theme.fontSizes.md.small};
+    line-height: 22px;
   }
 `;
 
@@ -28,7 +29,8 @@ export const HeroText = styled.h1`
   text-align: center;
 
   @media only screen and (min-width: 240px) {
-    font-size: ${(props) => props.theme.fontSizes.md.large};
+    /* font-size: ${(props) => props.theme.fontSizes.md.large}; */
+    font-size: 36px;
   }
 
   @media (min-width: 1200px) {
@@ -44,18 +46,27 @@ export const MediumText = styled.h3`
   font-style: normal;
   text-align: center;
 
+  @media only screen and (min-width: 240px) {
+    font-size: ${(props) => props.theme.fontSizes.md.medium};
+    font-size: 28px;
+  }
+
   @media (min-width: 1200px) {
     font-size: ${(props) => props.theme.fontSizes.md.medium};
   }
 `;
 
 export const SmallMediumText = styled.h3`
-  font-size: ${(props) => props.theme.fontSizes.sm.smallMedium};
+  font-size: ${(props) => props.theme.fontSizes.sm.SmallMedium};
   color: ${(props) => props.theme.colors.textPrimary};
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
   font-style: normal;
   text-align: center;
+
+  @media only screen and (min-width: 240px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.medium};
+  }
 
   @media (min-width: 1200px) {
     font-size: ${(props) => props.theme.fontSizes.md.smallMedium};
