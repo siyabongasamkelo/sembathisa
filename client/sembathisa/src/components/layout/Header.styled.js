@@ -29,9 +29,27 @@ export const NavArea = styled.nav`
     font-size: 12px;
     font-family: "inter";
   }
+  @media only screen and (min-width: 240px) {
+    display: none;
+  }
 `;
 
-export const ActionArea = styled.div``;
+export const ActionArea = styled.div`
+  @media only screen and (min-width: 240px) {
+    svg {
+      display: block;
+      transform: scale(300%);
+      margin-right: 20px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  @media only screen and (min-width: 900px) {
+    display: none;
+  }
+`;
 
 export const LogoText = styled.h3``;
 
@@ -40,6 +58,10 @@ export const UserProfile = styled.div`
   aspect-ratio: 1 /1;
   border-radius: 50%;
   background-color: black;
+  @media only screen and (min-width: 240px) {
+    display: none;
+  }
+
   @media (min-width: 1200px) {
   }
 `;
@@ -55,6 +77,12 @@ export const HelpButton = styled.button`
   border: none;
   margin-left: 0px;
   margin-top: ${(props) => props.theme.spacing.md};
+
+  @media only screen and (min-width: 240px) {
+    height: 45px;
+    width: 90px;
+    margin-top: ${(props) => props.theme.spacing.lg};
+  }
 
   @media (min-width: 1200px) {
     width: 74px;
