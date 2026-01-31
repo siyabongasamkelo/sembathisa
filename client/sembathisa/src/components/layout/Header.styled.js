@@ -49,6 +49,14 @@ export const ActionArea = styled.div`
   @media only screen and (min-width: 900px) {
     display: none;
   }
+
+  button {
+    height: 40px;
+    width: 80px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-top: ${(props) => props.theme.spacing.lg};
+  }
 `;
 
 export const LogoText = styled.h3``;
@@ -82,6 +90,25 @@ export const HelpButton = styled.button`
     height: 45px;
     width: 90px;
     margin-top: ${(props) => props.theme.spacing.lg};
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: white;
+      display: flex;
+
+      margin-top: 10%;
+      margin-left: 20%;
+    }
+
+    svg {
+      fill: white;
+      transform: scale(130%);
+      margin-left: 10px;
+      margin-top: 5%;
+    }
   }
 
   @media (min-width: 1200px) {
