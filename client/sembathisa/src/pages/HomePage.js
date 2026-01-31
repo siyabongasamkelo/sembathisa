@@ -7,6 +7,7 @@ import JoinNow from "../components/joinNow/JoinNow";
 import Faq from "../components/FAQcomponnets/Faq.js";
 import Footer from "../components/layout/Footer";
 import HomeMobile from "../components/homeComponents/HomeMobile";
+import AboutMobile from "../components/aboutusComponents/AboutMobile";
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
 
       {/* Mobile Designs */}
       <HomeMobile />
+      <AboutMobile />
     </>
   );
 };
