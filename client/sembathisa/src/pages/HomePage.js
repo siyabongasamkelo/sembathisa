@@ -8,6 +8,9 @@ import Faq from "../components/FAQcomponnets/Faq.js";
 import Footer from "../components/layout/Footer";
 import HomeMobile from "../components/homeComponents/HomeMobile";
 import AboutMobile from "../components/aboutusComponents/AboutMobile";
+import OurServicesMobile from "../components/ourservices/OurServicesMobile";
+import JoinNowMobile from "../components/joinNow/JoinNowMobile";
+import ContactMobile from "../components/ContactUs/ContactMobile";
 
 const HomePage = () => {
   return (
@@ -23,6 +26,9 @@ const HomePage = () => {
       {/* Mobile Designs */}
       <HomeMobile />
       <AboutMobile />
+      <OurServicesMobile />
+      <JoinNowMobile />
+      <ContactMobile />
     </>
   );
 };
