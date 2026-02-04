@@ -6,8 +6,16 @@ import {
 import { ContainerMobile } from "../ui/Container";
 import { MobileLayout } from "../ui/SectionLayout";
 import { MediumText, SmallText } from "../ui/typography/Text";
-import { ContactDetails, IconAndText } from "./ContactMobile.styled";
+import {
+  ContactDetails,
+  FormMobile,
+  IconAndText,
+} from "./ContactMobile.styled";
 import { TelephoneFill, GeoAltFill, EnvelopeFill } from "react-bootstrap-icons";
+import { FormLabel } from "../ui/typography/Text";
+import { Button } from "../ui/Button";
+import { FormTextArea } from "../common/FormTextArea";
+import { FormInput } from "../common/FormInput";
 
 const ContactMobile = () => {
   return (
@@ -29,16 +37,32 @@ const ContactMobile = () => {
             <TelephoneFill /> <SmallText>061 189 2231</SmallText>
           </IconAndText>
           <IconAndText>
-            <GeoAltFill />{" "}
+            <GeoAltFill />
             <SmallText>
               KwaZulu-Natal, Durban ,gillespie, 67 whitehaven
             </SmallText>
           </IconAndText>
           <IconAndText>
-            <EnvelopeFill />{" "}
+            <EnvelopeFill />
             <SmallText>siyabongasamkelociam@gmail.com</SmallText>
           </IconAndText>
         </ContactDetails>
+
+        <FormMobile>
+          <div>
+            <FormLabel>Your Email</FormLabel>
+          </div>
+          <div>
+            <FormInput type="email" placeholder="example@yourmail.com" />
+          </div>
+          <div>
+            <FormLabel>Your Message</FormLabel>
+          </div>
+          <div>
+            <FormTextArea placeholder="Type your message here" />
+          </div>
+          <Button>Submit</Button>
+        </FormMobile>
       </MobileLayout>
     </ContainerMobile>
   );
