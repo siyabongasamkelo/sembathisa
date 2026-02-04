@@ -33,7 +33,6 @@ export const HeroText = styled.h1`
   text-align: center;
 
   @media only screen and (min-width: 240px) {
-    /* font-size: ${(props) => props.theme.fontSizes.md.large}; */
     font-size: 36px;
   }
 
@@ -113,6 +112,10 @@ export const FormLabel = styled.label`
   font-style: normal;
   line-height: 22px;
   text-align: center;
+
+  @media only screen and (min-width: 240px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.smallMedium};
+  }
 
   @media (min-width: 1200px) {
     font-size: ${(props) => props.theme.fontSizes.md.small};
