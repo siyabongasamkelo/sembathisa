@@ -4,12 +4,7 @@ import {
   IntroductionParagraph,
 } from "../layout/PageIntroduction";
 import { ContainerMobile } from "../ui/Container";
-import {
-  AboutContent,
-  AboutHeader,
-  AboutMedia,
-  AboutMobileLayout,
-} from "./AboutMobile.styled";
+import { AboutContent, AboutHeader, AboutMedia } from "./AboutMobile.styled";
 import {
   MediumText,
   SmallMediumText,
@@ -21,11 +16,12 @@ import {
   Title,
   TitleAndParagraph,
 } from "../layout/TitleAndParagraph";
+import { MobileLayout } from "../ui/SectionLayout";
 
 const AboutMobile = () => {
   return (
     <ContainerMobile>
-      <AboutMobileLayout>
+      <MobileLayout>
         <Introduction>
           <IntroductionHeader>
             <MediumText>About Sembathisa Ubukhosi Foundation US</MediumText>
@@ -76,7 +72,7 @@ const AboutMobile = () => {
             </Paragraph>
           </TitleAndParagraph>
         </AboutContent>
-      </AboutMobileLayout>
+      </MobileLayout>
     </ContainerMobile>
   );
 };
