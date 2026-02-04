@@ -7,18 +7,18 @@ import {
   HeroMedia,
   HeroParagraph,
   HeroTextLayout,
-  HomeMobileLayout,
   SinglePhoto,
 } from "./HomeMobile.styled";
 import family from "../../assets/img/family.jpeg";
 import garden from "../../assets/img/garden.jpeg";
 import learning from "../../assets/img/learning.jpeg";
 import { Button } from "../ui/Button";
+import { MobileLayout } from "../ui/SectionLayout";
 
 const HomeMobile = () => {
   return (
     <ContainerMobile>
-      <HomeMobileLayout>
+      <MobileLayout style={{ margin: "0" }}>
         <Header />
         <HeroTextLayout>
           <HeroText>SEMBATHISA</HeroText>
@@ -44,7 +44,7 @@ const HomeMobile = () => {
         <HeroButton>
           <Button>Join Us</Button>
         </HeroButton>
-      </HomeMobileLayout>
+      </MobileLayout>
     </ContainerMobile>
   );
 };
