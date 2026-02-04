@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const AboutMobileLayout = styled.div`
-  width: 80%;
-  margin-top: ${(props) => props.theme.spacing.xxxxl};
-`;
-
 export const AboutContent = styled.div``;
 
 export const AboutHeader = styled.div`
