@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const HomeMobileLayout = styled.div`
-  width: 80%;
-`;
-
 export const HeroTextLayout = styled.div`
   display: flex;
   flex-direction: column;
