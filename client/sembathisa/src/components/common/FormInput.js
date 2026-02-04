@@ -10,4 +10,9 @@ export const FormInput = styled.input`
   font-size: 12px;
   font-family: "Kantumruy Pro", sans-serif;
   padding-left: 20px;
+
+  @media only screen and (min-width: 240px) {
+    height: 50px;
+    font-size: 14px;
+  }
 `;
