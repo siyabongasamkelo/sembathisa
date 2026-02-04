@@ -7,8 +7,13 @@ export const FormTextArea = styled.textarea`
   border: 1px solid #8ca9ff;
   border-radius: 5px;
   color: ${(props) => props.theme.colors.textSecondary};
-  padding-left: 10px;
+  padding-left: 20px;
   padding-top: 10px;
   font-size: 12px;
   font-family: "Kantumruy Pro", sans-serif;
+
+  @media only screen and (min-width: 240px) {
+    height: 180px;
+    font-size: 14px;
+  }
 `;
