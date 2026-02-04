@@ -11,6 +11,7 @@ import AboutMobile from "../components/aboutusComponents/AboutMobile";
 import OurServicesMobile from "../components/ourservices/OurServicesMobile";
 import JoinNowMobile from "../components/joinNow/JoinNowMobile";
 import ContactMobile from "../components/ContactUs/ContactMobile";
+import FaqMobile from "../components/FAQcomponnets/FaqMobile";
 
 const HomePage = () => {
   return (
@@ -29,6 +30,7 @@ const HomePage = () => {
       <OurServicesMobile />
       <JoinNowMobile />
       <ContactMobile />
+      <FaqMobile />
     </>
   );
 };
