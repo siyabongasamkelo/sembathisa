@@ -22,7 +22,12 @@ export const ContainerMobile = styled.div`
     display: flex;
   }
 
-  @media only screen and (min-width: 800px) {
+  .homelayout {
+    @media only screen and (min-width: 768px) {
+      width: 65%;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
     display: none;
   }
 `;
