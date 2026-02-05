@@ -6,7 +6,7 @@ export const HeaderAndText = styled.div`
 `;
 
 export const Header = styled.div`
-  width: 60%;
+  width: 100%;
   h3 {
     text-align: left;
   }
