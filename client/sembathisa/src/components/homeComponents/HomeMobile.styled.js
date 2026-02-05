@@ -23,16 +23,30 @@ export const ColumnPhotos = styled.div`
   flex-direction: column;
   img {
     width: 140px;
-    /* margin-left: ${(props) => props.theme.spacing.md}; */
-    margin-top: ${(props) => props.theme.spacing.md};
+    margin-top: ${(props) => props.theme.spacing.lg};
+  }
+
+  // -------------------------------Tablet Mode--------------------------\\
+
+  @media only screen and (min-width: 768px) {
+    img {
+      width: 180px;
+    }
   }
 `;
 
 export const SinglePhoto = styled.div`
   img {
     width: 140px;
-    margin-left: ${(props) => props.theme.spacing.md};
-    margin-top: ${(props) => props.theme.spacing.xxl};
+    margin-left: ${(props) => props.theme.spacing.lg};
+    /* margin-top: ${(props) => props.theme.spacing.xxl}; */
+    margin-top: 104px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    img {
+      width: 180px;
+    }
   }
 `;
 
@@ -41,6 +55,11 @@ export const SinglePhoto = styled.div`
 export const HeroParagraph = styled.div`
   width: 100%;
   margin-top: ${(props) => props.theme.spacing.md};
+
+  @media only screen and (min-width: 768px) {
+    width: 80%;
+    margin-left: 10%;
+  }
 `;
 
 // ---------------------------Hero Button------------------------------
@@ -51,5 +70,10 @@ export const HeroButton = styled.div`
 
   button {
     margin-top: ${(props) => props.theme.spacing.md};
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 80%;
+    margin-left: 10%;
   }
 `;
