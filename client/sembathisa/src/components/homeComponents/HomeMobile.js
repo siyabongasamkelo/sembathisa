@@ -18,7 +18,7 @@ import { MobileLayout } from "../ui/SectionLayout";
 const HomeMobile = () => {
   return (
     <ContainerMobile>
-      <MobileLayout style={{ margin: "0" }}>
+      <MobileLayout className="homelayout" style={{ margin: "0" }}>
         <Header />
         <HeroTextLayout>
           <HeroText>SEMBATHISA</HeroText>
