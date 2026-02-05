@@ -36,8 +36,13 @@ export const HeroText = styled.h1`
     font-size: 36px;
   }
 
-  @media (min-width: 9000px) {
+  @media (min-width: 900px) {
     font-size: ${(props) => props.theme.fontSizes.sm.large};
+  }
+
+  @media (min-width: 1200px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.large};
+    font-size: 38px;
   }
 `;
 
@@ -56,6 +61,11 @@ export const MediumText = styled.h3`
 
   @media (min-width: 900px) {
     font-size: ${(props) => props.theme.fontSizes.sm.medium};
+  }
+
+  @media (min-width: 1200px) {
+    font-size: ${(props) => props.theme.fontSizes.sm.large};
+    font-size: 38px;
   }
 `;
 
