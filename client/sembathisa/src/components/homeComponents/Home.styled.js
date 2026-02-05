@@ -21,9 +21,10 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroTextContent = styled.div`
-  width: 45%;
+  width: 55%;
   h3 {
   }
+
   @media (min-width: 1200px) {
     width: 55%;
   }
@@ -42,15 +43,20 @@ export const HeroParagraph = styled.div`
     }
   }
 
-  @media (min-width: 768px) {
-  }
-
   @media (min-width: 992px) {
+    width: 70%;
+    margin-left: 15%;
   }
 
   @media (min-width: 1200px) {
     width: 70%;
     margin-left: 15%;
+    margin-top: ${(props) => props.theme.spacing.lg};
+
+    button {
+      width: 320px;
+      margin-top: ${(props) => props.theme.spacing.lg};
+    }
   }
 `;
 
@@ -76,6 +82,7 @@ export const HeroMedia = styled.div`
     height: 140px;
   }
   @media (min-width: 1200px) {
+    margin-top: ${(props) => props.theme.spacing.xl};
     img {
       width: 320px;
       height: 180px;
@@ -87,12 +94,18 @@ export const IconsAndBenefits = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: ${(props) => props.theme.spacing.md};
+
+  @media (min-width: 1200px) {
+    margin-top: ${(props) => props.theme.spacing.xl};
+  }
 `;
 
 export const Icons = styled.div`
   width: 200px;
-  display: flex;
-  justify-content: space-evenly;
+  margin-left: -30px;
+  svg {
+    margin-left: 30px;
+  }
 `;
 
 export const Benefits = styled.div`
