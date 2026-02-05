@@ -8,6 +8,9 @@ export const AboutHeader = styled.div`
   h3 {
     text-align: left;
   }
+
+  @media only screen and (min-width: 768px) {
+  }
 `;
 
 export const AboutMedia = styled.div`
