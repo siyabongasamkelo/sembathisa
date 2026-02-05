@@ -9,7 +9,7 @@ import {
   AboutUsContentLayout,
   AboutUsParagraph,
 } from "./About.styled";
-import { MediumText, SmallMediumText, SmallText } from "../ui/typography/Text";
+import { SmallMediumText, SmallText } from "../ui/typography/Text";
 import family from "../../assets/img/family.jpeg";
 import { Button } from "../ui/Button";
 import {
@@ -24,19 +24,20 @@ const About = () => {
       <AboutLayOut>
         <Introduction>
           <IntroductionHeader>
-            <MediumText>About Sembathisa Ubukhosi Foundation US</MediumText>
+            <SmallMediumText>
+              About Sembathisa Ubukhosi Foundation US
+            </SmallMediumText>
           </IntroductionHeader>
           <IntroductionParagraph>
             <SmallText>
               The Sembathisa Ubukhosi Foundation is a South African non-profit
-              organisation focused on uplifting, assisting, and re-establishing
-              individuals and communities that were once disadvantaged.
+              organisation
             </SmallText>
           </IntroductionParagraph>
         </Introduction>
         <AboutUsContentLayout>
           <AboutUsContentHeader>
-            <MediumText>What We Do</MediumText>
+            <SmallMediumText>What We Do</SmallMediumText>
           </AboutUsContentHeader>
 
           <AboutUsContent>
