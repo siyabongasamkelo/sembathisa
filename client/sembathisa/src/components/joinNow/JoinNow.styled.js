@@ -25,10 +25,14 @@ export const JoinCommunityText = styled.div`
     text-align: left;
     margin-left: 30px;
   }
+
+  @media (min-width: 1200px) {
+    margin-left: ${(props) => props.theme.spacing.md};
+  }
 `;
 
 export const JoinCommunityParagraph = styled.div`
-  width: 80%;
+  width: 65%;
   margin-left: 30px;
   margin-top: ${(props) => props.theme.spacing.lg};
 
@@ -41,7 +45,7 @@ export const JoinNowButton = styled.div`
   width: 100%;
   background-color: black;
 
-  margin-top: ${(props) => props.theme.spacing.lg};
+  margin-top: ${(props) => props.theme.spacing.xl};
   display: flex;
   justify-content: space-between;
 `;
@@ -56,6 +60,10 @@ export const JoinNowButtonParagraph = styled.div`
   }
   button {
     margin-top: ${(props) => props.theme.spacing.md};
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: ${(props) => props.theme.spacing.xl};
   }
 `;
 
