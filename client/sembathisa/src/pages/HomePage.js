@@ -13,10 +13,10 @@ import JoinNowMobile from "../components/joinNow/JoinNowMobile";
 import ContactMobile from "../components/ContactUs/ContactMobile";
 import FaqMobile from "../components/FAQcomponnets/FaqMobile";
 import FooterMobile from "../components/layout/FooterMobile";
-
 const HomePage = () => {
   return (
     <>
+      {/*---------------------------- Desktop Pages --------------------------*/}
       <Home />
       <About />
       <OurServices />
@@ -25,7 +25,8 @@ const HomePage = () => {
       <Faq />
       <Footer />
 
-      {/* Mobile Designs */}
+      {/*---------------------------- Mobile Pages --------------------------*/}
+
       <HomeMobile />
       <AboutMobile />
       <OurServicesMobile />
@@ -33,6 +34,8 @@ const HomePage = () => {
       <ContactMobile />
       <FaqMobile />
       <FooterMobile />
+
+      {/*----------------------------Tablets Pages------------------------  */}
     </>
   );
 };
