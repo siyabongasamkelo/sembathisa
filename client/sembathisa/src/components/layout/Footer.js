@@ -37,13 +37,20 @@ export const Links = styled.div`
     a {
       color: ${(props) => props.theme.colors.buttonText};
       text-decoration: none;
-      font-size: 12px;
+      font-size: ${(props) => props.theme.fontSizes.sm.smallMedium};
       margin-top: ${(props) => props.theme.spacing.md};
     }
   }
 
   .links {
     margin-left: 62px;
+    @media (min-width: 1200px) {
+      margin-left: ${(props) => props.theme.spacing.xl};
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: ${(props) => props.theme.spacing.lg};
   }
 `;
 
@@ -52,6 +59,9 @@ export const SocialMediaIcons = styled.div`
     fill: ${(props) => props.theme.colors.buttonText};
     margin-left: 15px;
     margin-top: ${(props) => props.theme.spacing.lg};
+  }
+  @media (min-width: 1200px) {
+    margin-left: ${(props) => props.theme.spacing.lg};
   }
 `;
 
