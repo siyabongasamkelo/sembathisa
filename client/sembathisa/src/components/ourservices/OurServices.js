@@ -6,7 +6,7 @@ import {
 import TextBlocks from "../layout/TextBlocks";
 import { Button } from "../ui/Button";
 import { Container } from "../ui/Container";
-import { MediumText, SmallMediumText, SmallText } from "../ui/typography/Text";
+import { SmallMediumText, SmallText } from "../ui/typography/Text";
 import {
   Benefits,
   FeesAndPayment,
@@ -24,14 +24,13 @@ const OurServices = () => {
       <OurServicesLayout>
         <Introduction>
           <IntroductionHeader>
-            <MediumText>Our Services</MediumText>
+            <SmallMediumText>Our Services</SmallMediumText>
           </IntroductionHeader>
           <IntroductionParagraph>
             <SmallText>
               At the Sembathisa Ubukhosi Foundation, our services are designed
               to address real challenges faced by youth and disadvantaged
-              communities. Each program focuses on empowerment, sustainability,
-              and long-term impact.
+              communities.
             </SmallText>
           </IntroductionParagraph>
         </Introduction>
@@ -46,16 +45,16 @@ const OurServices = () => {
 
             <TextBlocks
               paragraph={
-                "We provide structured skills development programs that equip young people with practical, market-relevant abilities. Our training focuses on preparing individuals for employment, entrepreneurship, and personal growth in an evolving economy."
+                "Access to financial resources remains one of the biggest barriers to growth for small cooperatives and emerging businesses. We support these initiatives by connecting them with sponsors, partners, and funding opportunities."
               }
-              header={"Skills Development & Training"}
+              header={"Financial Assistance & Cooperative Support"}
             />
 
             <TextBlocks
               paragraph={
-                "We provide structured skills development programs that equip young people with practical, market-relevant abilities. Our training focuses on preparing individuals for employment, entrepreneurship, and personal growth in an evolving economy."
+                "We support individuals who were previously incarcerated by providing pathways for successful reintegration into society. Our programs are built around dignity, second chances, and social inclusion."
               }
-              header={"Skills Development & Training"}
+              header={"Community Reintegration Programs"}
             />
           </Benefits>
           <TermsAndConditions>
