@@ -92,7 +92,13 @@ export const LogoText = styled.h3`
   font-family: "Inspiration", cursive;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
 
+  &:hover {
+    color: ${(props) => props.theme.colors.primary};
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
   @media only screen and (min-width: 240px) {
     font-size: ${(props) => props.theme.fontSizes.sm.medium};
   }
