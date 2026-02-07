@@ -18,7 +18,11 @@ export const HeaderInner = styled.div`
   }
 `;
 
-export const LogoArea = styled.div``;
+export const LogoArea = styled.div`
+  a {
+    text-decoration: none;
+  }
+`;
 
 export const NavArea = styled.nav`
   margin-left: -20px;
@@ -28,6 +32,12 @@ export const NavArea = styled.nav`
     color: ${(props) => props.theme.colors.textPrimary};
     font-size: ${(props) => props.theme.fontSizes.sm.smallMedium};
     font-family: "inter";
+
+    &:hover {
+      color: ${(props) => props.theme.colors.primary};
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+    }
   }
   @media only screen and (min-width: 240px) {
     display: none;
@@ -73,6 +83,11 @@ export const UserProfile = styled.div`
   aspect-ratio: 1 /1;
   border-radius: 50%;
   background-color: black;
+
+  &:hover {
+    cursor: pointer;
+  }
+
   @media only screen and (min-width: 240px) {
     display: none;
   }
