@@ -3,7 +3,6 @@ import { ContainerMobile } from "../ui/Container";
 import { MobileLayout } from "../ui/SectionLayout";
 import { Title, TitleAndParagraph } from "./TitleAndParagraph";
 import { SmallMediumText, SmallText } from "../ui/typography/Text";
-import { Button } from "../ui/Button";
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Whatsapp } from "react-bootstrap-icons";
 
@@ -50,7 +49,7 @@ const FooterMobile = () => {
             <SmallMediumText>Join Us Now</SmallMediumText>
           </Title>
         </TitleAndParagraph>
-        <Button>Join Us</Button>
+
         <MobileFooterContent>
           <Links>
             <Link>Home</Link>
