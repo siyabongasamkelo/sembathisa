@@ -8,9 +8,8 @@ import {
   UserProfile,
 } from "./Header.styled";
 import { LogoText } from "../ui/typography/Text";
-import { Link } from "react-router-dom";
 import { List } from "react-bootstrap-icons";
-// import { QuestionCircle } from "react-bootstrap-icons";
+import { HashLink as Link } from "react-router-hash-link";
 import { Button } from "../ui/Button";
 
 const Header = () => {
@@ -18,24 +17,23 @@ const Header = () => {
     <Headerr>
       <HeaderInner>
         <LogoArea>
-          <LogoText>SEMBATHISA</LogoText>
+          <Link to="/">
+            <LogoText>SEMBATHISA</LogoText>
+          </Link>
         </LogoArea>
 
         <NavArea>
-          <Link>Home</Link>
-          <Link>About Us</Link>
-          <Link>Our Services</Link>
-          <Link>Join Now</Link>
-          <Link>Contact Us</Link>
+          <Link to="/">Home</Link>
+          <Link to="/#about">About Us</Link>
+          <Link to="/#ourservices">Our Services</Link>
+          <Link to="/#joinnow">Join Now</Link>
+          <Link to="/#contactus">Contact Us</Link>
         </NavArea>
 
         <ActionArea>
           <List />
           <UserProfile />
-          <Button>
-            Help
-            {/* <QuestionCircle /> */}
-          </Button>
+          <Button>Help</Button>
         </ActionArea>
       </HeaderInner>
     </Headerr>
