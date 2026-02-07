@@ -19,7 +19,7 @@ import { FormInput } from "../common/FormInput";
 
 const ContactMobile = () => {
   return (
-    <ContainerMobile>
+    <ContainerMobile id="contactUs">
       <MobileLayout>
         <Introduction>
           <IntroductionHeader>
