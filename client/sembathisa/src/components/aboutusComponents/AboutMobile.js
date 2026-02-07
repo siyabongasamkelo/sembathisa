@@ -20,7 +20,7 @@ import { MobileLayout } from "../ui/SectionLayout";
 
 const AboutMobile = () => {
   return (
-    <ContainerMobile>
+    <ContainerMobile id="aboutUs">
       <MobileLayout>
         <Introduction>
           <IntroductionHeader>
