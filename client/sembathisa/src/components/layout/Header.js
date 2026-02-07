@@ -1,4 +1,3 @@
-import React from "react";
 import {
   HeaderInner,
   Headerr,
@@ -8,9 +7,11 @@ import {
   UserProfile,
 } from "./Header.styled";
 import { LogoText } from "../ui/typography/Text";
-import { List } from "react-bootstrap-icons";
+// import { List } from "react-bootstrap-icons";
 import { HashLink as Link } from "react-router-hash-link";
-import { Button } from "../ui/Button";
+// import { Button } from "../ui/Button";
+
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
@@ -31,9 +32,12 @@ const Header = () => {
         </NavArea>
 
         <ActionArea>
-          <List />
+          {/* <List
+            
+          /> */}
+          <MobileMenu />
           <UserProfile />
-          <Button>Help</Button>
+          {/* <Button>Help</Button> */}
         </ActionArea>
       </HeaderInner>
     </Headerr>
