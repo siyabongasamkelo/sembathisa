@@ -19,7 +19,7 @@ import { TelephoneFill, GeoAltFill, EnvelopeFill } from "react-bootstrap-icons";
 
 const ContactUs = () => {
   return (
-    <Container>
+    <Container id="contactus">
       <ContactUsLayout>
         <Introduction>
           <IntroductionHeader>
