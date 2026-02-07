@@ -17,7 +17,7 @@ import night from "../../assets/img/night.jpeg";
 const JoinNowMobile = () => {
   return (
     <>
-      <ContainerMobile>
+      <ContainerMobile id="joinNow">
         <MobileLayout>
           <AboutHeader>
             <SmallMediumText>Join The Community</SmallMediumText>
