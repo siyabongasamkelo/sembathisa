@@ -16,7 +16,7 @@ import { Button } from "../ui/Button";
 
 const JoinNow = () => {
   return (
-    <Container>
+    <Container id="joinnow">
       <JoinNowLayout>
         <JoinCommunity>
           <JoinCommunityImage>
