@@ -29,7 +29,7 @@ import {
 
 const Home = () => {
   return (
-    <Container>
+    <Container id="aboutus">
       <HomeLayout>
         <Header />
         <Hero>
