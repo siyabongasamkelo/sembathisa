@@ -20,7 +20,7 @@ import {
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <AboutLayOut>
         <Introduction>
           <IntroductionHeader>
