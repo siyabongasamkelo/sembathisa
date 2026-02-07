@@ -105,6 +105,12 @@ export const Icons = styled.div`
   margin-left: -30px;
   svg {
     margin-left: 30px;
+
+    &:hover {
+      transition: 0.5s ease-in-out;
+      fill: ${(props) => props.theme.colors.primary};
+      cursor: pointer;
+    }
   }
 `;
 
