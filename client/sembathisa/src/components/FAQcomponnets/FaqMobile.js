@@ -13,7 +13,7 @@ import { FAQMobileContent } from "./FaqMobile.styled";
 
 const FaqMobile = () => {
   return (
-    <ContainerMobile>
+    <ContainerMobile id="faQ">
       <MobileLayout>
         <Introduction>
           <IntroductionHeader>
