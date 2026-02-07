@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Container } from "../ui/Container";
 import { Button } from "../ui/Button";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { Facebook, Instagram, Twitter, Whatsapp } from "react-bootstrap-icons";
 import { SmallText } from "../ui/typography/Text";
 
@@ -39,6 +39,11 @@ export const Links = styled.div`
       text-decoration: none;
       font-size: ${(props) => props.theme.fontSizes.sm.smallMedium};
       margin-top: ${(props) => props.theme.spacing.md};
+
+      &:hover {
+        transition: 0.5s ease-in-out;
+        color: ${(props) => props.theme.colors.primary};
+      }
     }
   }
 
@@ -59,6 +64,11 @@ export const SocialMediaIcons = styled.div`
     fill: ${(props) => props.theme.colors.buttonText};
     margin-left: 15px;
     margin-top: ${(props) => props.theme.spacing.lg};
+    &:hover {
+      transition: 0.5s ease-in-out;
+      fill: ${(props) => props.theme.colors.primary};
+      cursor: pointer;
+    }
   }
   @media (min-width: 1200px) {
     margin-left: ${(props) => props.theme.spacing.lg};
@@ -85,16 +95,16 @@ const Footer = () => {
           <LinksAndJoinButton>
             <Links>
               <div>
-                <Link>Home</Link>
-                <Link>About Us</Link>
-                <Link>Our Services</Link>
-                <Link>Join Now</Link>
+                <Link to="/">Home</Link>
+                <Link to="/#about">About Us</Link>
+                <Link to="/#ourservices">Our Services</Link>
+                <Link to="/#joinnow">Join Now</Link>
               </div>
               <div className="links">
-                <Link>Contact Us</Link>
+                <Link to="/#contactus">Contact Us</Link>
                 <Link>Login</Link>
                 <Link>Register</Link>
-                <Link>FAQ</Link>
+                <Link to="/#faq">FAQ</Link>
               </div>
             </Links>
 
